@@ -4,6 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D7315D"
     tools:context=".ActivityTwo">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="245dp"
+        android:layout_height="208dp"
+        app:srcCompat="@drawable/logo_strive"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberPassword"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="569dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="136dp"
+        android:layout_height="68dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="468dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
