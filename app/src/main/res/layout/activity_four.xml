@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="584dp"
-        android:layout_height="435dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
@@ -33,18 +33,25 @@
 
     <Switch
         android:id="@+id/switchButton"
-        android:layout_width="458dp"
-        android:layout_height="84dp"
+        android:layout_width="370dp"
+        android:layout_height="73dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/shade"
         android:checked="false"
         android:switchMinWidth="70dp"
         android:switchMinHeight="40dp"
-        android:switchPadding="10dp"
+        android:switchPadding="20dp"
         android:text="WiFi"
+
+
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="50dp"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.201" />
+        app:layout_constraintVertical_bias="0.152" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
