@@ -41,20 +41,23 @@
 
 
         android:background="@drawable/roundstyle"
-        android:backgroundTint="@color/shade"
+        android:backgroundTint="#FEFEFE"
         android:checked="false"
         android:switchMinWidth="70dp"
         android:switchMinHeight="40dp"
+
         android:text="WiFi"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="34sp"
-        android:textStyle="bold" />
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#D6315D"
+        />
 
     <ListView
         android:id="@+id/wifiList"
         android:layout_width="356dp"
         android:layout_height="289dp"
-
+        android:textColor="#ffffff"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -65,11 +68,17 @@
 
     <Button
         android:id="@+id/scanBtn"
-        android:layout_width="match_parent"
+        android:layout_width="145dp"
         android:layout_height="50dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
-        android:layout_margin="15dp"
-        android:text="Scan WiFi" />
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="23dp"
+        android:backgroundTint="#FEFEFE"
+        android:text="Scan WiFi"
+        android:textColor="#D6315D" />
 
 </RelativeLayout>
