@@ -1,9 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="50dp"
+
+
+
+
+    android:background="@color/pink"
     tools:context=".ActivityFour">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="108dp"
+        android:layout_height="138dp"
+
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="593dp"
+        app:srcCompat="@drawable/wifi" />
+
+    <Switch
+        android:id="@+id/switchButton"
+        android:layout_width="349dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginBottom="470dp"
+
+
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FEFEFE"
+        android:checked="false"
+        android:switchMinWidth="70dp"
+        android:switchMinHeight="40dp"
+
+        android:text="WiFi"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#D6315D"
+        />
+
+    <ListView
+        android:id="@+id/wifiList"
+        android:layout_width="356dp"
+        android:layout_height="289dp"
+        android:textColor="#ffffff"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="288dp"
+        android:clipToPadding="false"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="23dp"
+        android:backgroundTint="#FEFEFE"
+        android:text="Scan WiFi"
+        android:textColor="#D6315D" />
+
+</RelativeLayout>
