@@ -7,68 +7,94 @@
     android:background="#D7315D"
     tools:context=".ActivityThree">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFFFF"
-        android:text="Enter your Mobile Number"
-        android:textColor="#D7315D"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="343dp" />
-
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="Name"
+        android:inputType="textPersonName|text"
         android:minHeight="48dp"
-        android:text="Name"
         android:textColor="#FFFFFFFF"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="418dp" />
+        android:textColorHint="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFFFF"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="DOB"
+        android:inputType="date"
         android:minHeight="48dp"
-        android:text="Age"
         android:textColor="#FFFFFFFF"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="491dp"
+        android:textColorHint="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFFFF"
         android:ems="10"
-        android:inputType="textEmailAddress"
+        android:hint="E-mail"
+        android:inputType="textWebEmailAddress"
         android:minHeight="48dp"
-        android:text="Email"
         android:textColor="#FFFFFFFF"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="562dp"
+        android:textColorHint="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFFFF"
         android:text="Register"
         android:textColor="#D7315D"
-        android:background="#FFFFFFFF"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="630dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898"
         tools:ignore="MissingConstraints" />
 
+    <EditText
+        android:id="@+id/editTextPhone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFFFFFF"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textColorHint="#FFFFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.801" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,17 +16,21 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="108dp"
-        android:layout_height="138dp"
+        android:layout_width="wrap_content"
+        android:layout_height="123dp"
+
+        android:layout_alignParentStart="true"
+
+
+        android:layout_alignParentTop="true"
+
 
         android:layout_alignParentEnd="true"
-
-
         android:layout_alignParentBottom="true"
-
-
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="156dp"
-        android:layout_marginBottom="593dp"
+        android:layout_marginBottom="599dp"
         app:srcCompat="@drawable/wifi" />
 
     <Switch
@@ -34,36 +38,44 @@
         android:layout_width="349dp"
         android:layout_height="55dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
         android:layout_alignParentBottom="true"
+
+
         android:layout_marginStart="16dp"
-
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="470dp"
-
-
         android:background="@drawable/roundstyle"
+
         android:backgroundTint="#FEFEFE"
         android:checked="false"
         android:switchMinWidth="70dp"
         android:switchMinHeight="40dp"
-
         android:text="WiFi"
+        android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="23sp"
-        android:textStyle="bold"
         android:textColor="#D6315D"
-        />
+        android:textSize="23sp"
+        android:textStyle="bold" />
 
     <ListView
         android:id="@+id/wifiList"
         android:layout_width="356dp"
         android:layout_height="289dp"
-        android:textColor="#ffffff"
-
         android:layout_alignParentStart="true"
+
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="288dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="104dp"
         android:clipToPadding="false"
+        android:textColor="#ffffff"
         android:visibility="visible" />
 
     <Button
@@ -71,11 +83,13 @@
         android:layout_width="145dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
         android:layout_marginStart="122dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="122dp"
         android:layout_marginBottom="23dp"
         android:backgroundTint="#FEFEFE"
         android:text="Scan WiFi"
