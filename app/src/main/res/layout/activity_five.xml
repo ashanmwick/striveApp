@@ -32,6 +32,7 @@
         android:layout_marginBottom="82dp"
         android:text="Instructional panel"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
