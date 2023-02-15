@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "57907367912",
+    "project_id": "fir-phoneauth1-1208a",
+    "storage_bucket": "fir-phoneauth1-1208a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57907367912:android:e419f08cbdcfd963701e5d",
+        "android_client_info": {
+          "package_name": "com.example.strive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57907367912-obcvkf6hcata990qbv59a951qodi86ko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpJPUd_zXC0PFVnSGUAIJC-Zxn4MVCSNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57907367912-obcvkf6hcata990qbv59a951qodi86ko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
