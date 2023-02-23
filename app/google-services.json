@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "57907367912-jd3na8n6ska07t0koqaga1aa7v26qv38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.strive",
+            "certificate_hash": "cc5373df3fe7e16351eac1f0fe5efa8e18f25052"
+          }
+        },
+        {
           "client_id": "57907367912-obcvkf6hcata990qbv59a951qodi86ko.apps.googleusercontent.com",
           "client_type": 3
         }

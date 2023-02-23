@@ -36,7 +36,7 @@
     <Switch
         android:id="@+id/switchButton"
         android:layout_width="349dp"
-        android:layout_height="55dp"
+        android:layout_height="57dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -47,19 +47,19 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="165dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="470dp"
+        android:layout_marginBottom="459dp"
         android:background="@drawable/roundstyle"
 
         android:backgroundTint="#FEFEFE"
         android:checked="false"
         android:switchMinWidth="70dp"
-        android:switchMinHeight="40dp"
         android:text="WiFi"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#D6315D"
         android:textSize="23sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="ExtraText" />
 
     <ListView
         android:id="@+id/wifiList"
