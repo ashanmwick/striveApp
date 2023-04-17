@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ActivityTwo extends AppCompatActivity {
     EditText phone, otp;
-    Button btnGenerateOTP;
+    Button btnGenerateOTP, btnVerifyOTP;
     FirebaseAuth mAuth;
     String verificationID;
 
@@ -33,6 +33,7 @@ public class ActivityTwo extends AppCompatActivity {
         phone = findViewById(R.id.editTextPhone);
         otp = findViewById(R.id.editTextNumberPassword);
         btnGenerateOTP = findViewById(R.id.button_otp);
+        btnVerifyOTP = findViewById(R.id.button_sendOTP);
         mAuth = FirebaseAuth.getInstance();
 
         btnGenerateOTP.setOnClickListener(view -> {
@@ -40,12 +41,24 @@ public class ActivityTwo extends AppCompatActivity {
                 Toast.makeText(ActivityTwo.this, "Enter Valid Phone No.", Toast.LENGTH_SHORT).show();
             }
             else {
+
                 String number = phone.getText().toString();
                 sendVerificationCode(number);
             }
         });
 
+        btnVerifyOTP.setOnClickListener(view -> {
+            if(TextUtils.isEmpty(otp.getText().toString())){
+                Toast.makeText(ActivityTwo.this, "Wrong OTP Entered", Toast.LENGTH_SHORT).show();
+            }
+            else {
+
+                verifyCode(otp.getText().toString());
+            }
+        });
+
     }
+
 
     @Override
     public void onStart() {
@@ -61,7 +74,7 @@ public class ActivityTwo extends AppCompatActivity {
     private void sendVerificationCode(String phoneNumber) {
         PhoneAuthOptions options =
                 PhoneAuthOptions.newBuilder(mAuth)
-                        .setPhoneNumber(phoneNumber)       // Phone number to verify
+                        .setPhoneNumber("+94"+phoneNumber)       // Phone number to verify
                         .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
                         .setActivity(this)                 // Activity (for callback binding)
                         .setCallbacks(mCallbacks)          // OnVerificationStateChangedCallbacks
@@ -105,11 +118,12 @@ public class ActivityTwo extends AppCompatActivity {
         }
 
         
-        private void verifyCode(String code){
-            PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationID,code);
-            signInByCredentials(credential);
-        }
+
     };
+    private void verifyCode(String code){
+        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationID,code);
+        signInByCredentials(credential);
+    }
 
     private void signInByCredentials(PhoneAuthCredential credential) {
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
